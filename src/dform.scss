@@ -1,0 +1,34 @@
+.dform-number-list,
+.dform-bullet-list {
+  @apply space-y-2;
+}
+
+.dform-number-list {
+  @apply list-decimal;
+}
+
+.dform-bullet-list {
+  @apply list-disc;
+}
+
+.dform-list-item {
+  .dform-list-item-title {
+    @apply font-bold;
+  }
+
+  .dform-list-item-children {
+    @apply ml-4;
+  }
+}
+
+.dform-filter {
+  @apply flex space-x-2;
+}
+
+.dform-tag-filter {
+  @apply border rounded-full p-2 bg-red-200;
+}
+
+.dform-tag-filter-selected {
+  @apply border rounded-full p-2 bg-red-500;
+}

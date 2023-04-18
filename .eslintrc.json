@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "@kodkafa/eslint-config/react",
+    "plugin:storybook/recommended"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ]
+  }
+}

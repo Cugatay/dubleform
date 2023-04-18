@@ -6,9 +6,9 @@ interface IProps extends Omit<React.LiHTMLAttributes<HTMLLIElement>, 'title'> {
   children: ReactNode;
 }
 
-export function ListItem({ title, children, className }: IProps) {
+export function ListItem({ title, children, className, ...props }: IProps) {
   return (
-    <li className={clsx('dform-list-item', className)}>
+    <li {...props} className={clsx('dform-list-item', className)}>
       {title instanceof HTMLElement ? title : <div className='dform-list-item-title'>{title}</div>}
       <div className='dform-list-item-children'>{children}</div>
     </li>
